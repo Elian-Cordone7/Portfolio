@@ -58,7 +58,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="relative overflow-hidden bg-gray-50 shadow-md">
+      <header className="relative overflow-hidden bg-zinc-200 shadow-md">
         <div className="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center md:justify-between gap-6">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
