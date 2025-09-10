@@ -64,14 +64,17 @@ export default function App() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex items-center gap-6"
+            className="flex items-center gap-6 w-full md:w-auto"
           >
-            {/* Foto circular */}
-            <img
-              src="/yop.jpg"
-              alt="Foto de Elian Cordone"
-              className="w-24 h-24 rounded-full border-4 border-gray-700 object-cover"
-            />
+            {/* Contenedor que evita que la imagen se encoja */}
+            <div className="flex-shrink-0">
+              <img
+                src="/yop.jpg"
+                alt="Foto de Elian Cordone"
+                className="w-24 h-24 rounded-full border-4 border-gray-700 object-cover"
+              />
+            </div>
+
             <h1 className="text-4xl font-bold text-black">Elian Cordone</h1>
           </motion.div>
 
@@ -79,14 +82,14 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="flex gap-4"
+            className="flex flex-wrap gap-4 justify-center md:justify-start w-full md:w-auto"
           >
             <a
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-md hover:bg-gray-900 hover:text-white transition"
+              className="flex items-center justify-center gap-2 px-4 py-2 border border-gray-700 rounded-md hover:bg-gray-900 hover:text-white transition w-full sm:w-auto"
             >
               <FaLinkedin size={20} /> LinkedIn
             </a>
@@ -95,13 +98,13 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-md hover:bg-gray-900 hover:text-white transition"
+              className="flex items-center justify-center gap-2 px-4 py-2 border border-gray-700 rounded-md hover:bg-gray-900 hover:text-white transition w-full sm:w-auto"
             >
               <FaGithub size={20} /> GitHub
             </a>
             <button
               onClick={handleCopy}
-              className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-md hover:bg-gray-900 hover:text-white transition"
+              className="flex items-center justify-center gap-2 px-4 py-2 border border-gray-700 rounded-md hover:bg-gray-900 hover:text-white transition w-full sm:w-auto"
               aria-label="Copiar email"
             >
               <FaEnvelope size={18} />
@@ -120,9 +123,9 @@ export default function App() {
           className="max-w-3xl text-gray-700 leading-relaxed"
         >
           Soy desarrollador backend con <strong>3 años de experiencia</strong> construyendo
-          APIs y servicios con Java + Spring Boot. Trabaje en proyectos con
-          integraciones, seguridad, y despliegues en
-          contenedores                             .              .
+          APIs y servicios con Java + Spring Boot. 
+          Experiencia en integraciones, seguridad, y
+          despliegues en contenedores
           Me gusta involucrarme en todo el ciclo:
           diseño, desarrollo, pruebas y soporte productivo.
         </motion.p>
