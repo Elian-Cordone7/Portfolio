@@ -112,7 +112,7 @@ export default function App() {
       </header>
 
       {/* About */}
-      <Section id="about" title="Sobre mí">
+      <Section id="about" title="Sobre mi">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -183,7 +183,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="text-sm underline text-blue-600 hover:text-blue-800"
                   >
-                    Código
+                    Codigo
                   </a>
                 )}
                 {p.demo && (
