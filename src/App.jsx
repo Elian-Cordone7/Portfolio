@@ -69,7 +69,7 @@ export default function App() {
             {/* Contenedor que evita que la imagen se encoja */}
             <div className="flex-shrink-0">
               <img
-                src="/yop.jpg"
+                src="/elian.jpeg"
                 alt="Foto de Elian Cordone"
                 className="w-24 h-24 rounded-full border-4 border-gray-700 object-cover"
               />
